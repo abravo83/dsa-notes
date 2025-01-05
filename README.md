@@ -40,3 +40,17 @@ En resumen
 | Cualquier lenguaje | Leng. Programación |
 | Sin dependencias   | Hardware, SW y SO  |
 | Luego se analiza   | Luego se prueba    |
+
+## 1.4 ¿Cómo comparamos un algoritmo?
+
+Ahora que ya sabemos qué es una gloritmo y que entendemos que es una solución concreta a un problema durante la fase de diseño; como estamos aún en la fase de diseño nos podemos preguntar si es la mejor solución para nuestro problema.
+
+Para poder evaluar soluciones primero debemos ver si la solución realmente resuelve nuesto problema y una vez que tenemos un conjunto de algoritmos que solucionan nuestro problema debemos ser capaces de evaluar cual de ellos es la mejor solución.
+
+Para ello debemos ser capacer de comparar entre diferentes algoritmos.
+
+Podemos comparar los algoritmos en base a:
+
+- El tiempo que tardan en llevarse a cabo
+- El espacio que ocupan
+- Otras cualidades
