@@ -54,3 +54,19 @@ Podemos comparar los algoritmos en base a:
 - El tiempo que tardan en llevarse a cabo
 - El espacio que ocupan
 - Otras cualidades
+
+## 1.5 Caraterísticas de un algoritmo
+
+- Un algoritmo necesita ningún o algúnos inputs.
+- Un algoritmo produce al menos un output, ya que si nó sería inutil. El algoritmo debe producir algún resultado.
+- Cada procedimiento debe ser totalmente definido. Ningún procedimiento puede ser ambiguo.
+- Un algoritmo debe tener un final. Sin embargo un programa puede correr de forma contínua, p.e. en un servicio.
+- Un algoritmo debe ser efectivo en dos sentidos: No debe tener pasos innecesarios para alcanzar una solución y al final todos los pasos deben conducir a una solución.
+
+## 1.6 ¿Qué es la << notación O Grande >>?
+
+La `notación O Grande` o `Big O Notation` es una forma genérica de hablar de la eficiencia de un algoritmo. Es genérica en cuanto a que no expresa de forma precisa la eficiencia, sino en una situación de `peor situación posible` para cada algoritmo.
+
+Su utilidad viene de poder usarla para comparar entre diferentes alorimtos que sirvan para solucionar un mismo problema.
+
+La `notación O grande` nos resume las funciones de tiempo o de espacio de un algoritmo para que podamos comparar al más eficiente de entre vairos algoritmos.
