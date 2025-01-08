@@ -69,4 +69,32 @@ La `notación O Grande` o `Big O Notation` es una forma genérica de hablar de l
 
 Su utilidad viene de poder usarla para comparar entre diferentes alorimtos que sirvan para solucionar un mismo problema.
 
-La `notación O grande` nos resume las funciones de tiempo o de espacio de un algoritmo para que podamos comparar al más eficiente de entre vairos algoritmos.
+La `notación O grande` nos resume las funciones de tiempo o de espacio de un algoritmo para que podamos comparar al más eficiente de entre varios algoritmos.
+
+La función tiempo, o la función espacio son el resultado de, en el primer caso contar cada una de las operaciones que se realizan al realizar el algoritmo, en el segundo de contar el número de nombre o asignaciones que se usan.
+
+Por ejemplo: Alternar dos elementos dentro de un array
+
+```javascript
+const alternarPrimerasDosPosicionesArray(arr) {
+
+    const temp1 = arr[1]; // 1a operación
+    arr[1] = arr[0]; // 2a operación
+    arr[0] = temp1; // 3a operación
+
+    return arr;
+}
+```
+
+Vemos que la función tiempo es de 3 operaciones: `f(n) = 3`
+Vemos que hemos ocupado una variable temporal `temp1` luego la función espacio sería `f(n) = 1`. En este caso `n`representaría la longitud de los datos, que concidiría con la longitud del array. Pero nuestro algoritmo es independiente de la longitud del array, luego en este caso decimos que es `constante`.
+
+Una función tiempo constante, ya sea `f(n) = 3`, `f(n) = 6` o `f(n) = 22`, se expresa como simplificación generalizada o `notación O grande` como `O(n) = 1`:
+
+```javascript
+f(n) = 3 =>  O(n) = 1
+```
+
+Decimos que la **complejidad tiempo O(n) es constante** y esto se expresa como `O(n) = 1` ya que el número de operaciones en sí es despreciable según aumentan los tamaños de los datos, y lo único que importa es que es un número fijo de operaciones sin importar el tamaño de los datos a procesar ni tampoco en sí la cantidad de operaciones fijas. Y lo mismo pasa con la complejidad espacio de este algoritmo: `O(n) = 1`. Ya que siempre usamos la misma cantidad de variables nuevas (arr era un input).
+
+Las funciones tiempo o espacio independientes del tamaño de los datos son pocas. La mayor parte de los algoritmos comunes para resolver problemas lo hacen en función de `n`.
