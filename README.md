@@ -1,6 +1,6 @@
 # dsa-notes
 
-## 1 Algoritmos y notación `O grande`
+## 1 Definiciones de Algoritmos y de notación `O grande`
 
 ### 1.1 ¿Qué es un Algoritmo?
 
@@ -41,7 +41,7 @@ En resumen
 | Sin dependencias   | Hardware, SW y SO  |
 | Luego se analiza   | Luego se prueba    |
 
-## 1.4 ¿Cómo comparamos un algoritmo?
+### 1.4 ¿Cómo comparamos un algoritmo?
 
 Ahora que ya sabemos qué es una gloritmo y que entendemos que es una solución concreta a un problema durante la fase de diseño; como estamos aún en la fase de diseño nos podemos preguntar si es la mejor solución para nuestro problema.
 
@@ -55,7 +55,7 @@ Podemos comparar los algoritmos en base a:
 - El espacio que ocupan
 - Otras cualidades
 
-## 1.5 Caraterísticas de un algoritmo
+### 1.5 Caraterísticas de un algoritmo
 
 - Un algoritmo necesita ningún o algúnos inputs.
 - Un algoritmo produce al menos un output, ya que si nó sería inutil. El algoritmo debe producir algún resultado.
@@ -63,7 +63,7 @@ Podemos comparar los algoritmos en base a:
 - Un algoritmo debe tener un final. Sin embargo un programa puede correr de forma contínua, p.e. en un servicio.
 - Un algoritmo debe ser efectivo en dos sentidos: No debe tener pasos innecesarios para alcanzar una solución y al final todos los pasos deben conducir a una solución.
 
-## 1.6 ¿Qué es la << notación O Grande >>?
+### 1.6 ¿Qué es la << notación O Grande >>?
 
 La `notación O Grande` o `Big O Notation` es una forma genérica de hablar de la eficiencia de un algoritmo. Es genérica en cuanto a que no expresa de forma precisa la eficiencia, sino en una situación de `peor situación posible` para cada algoritmo.
 
@@ -98,3 +98,13 @@ f(n) = 3 =>  O(n) = 1
 Decimos que la **complejidad tiempo O(n) es constante** y esto se expresa como `O(n) = 1` ya que el número de operaciones en sí es despreciable según aumentan los tamaños de los datos, y lo único que importa es que es un número fijo de operaciones sin importar el tamaño de los datos a procesar ni tampoco en sí la cantidad de operaciones fijas. Y lo mismo pasa con la complejidad espacio de este algoritmo: `O(n) = 1`. Ya que siempre usamos la misma cantidad de variables nuevas (arr era un input).
 
 Las funciones tiempo o espacio independientes del tamaño de los datos son pocas. La mayor parte de los algoritmos comunes para resolver problemas lo hacen en función de `n`.
+
+## 2 Vista general de los diferentes grupos de algoritmos basándonos en << Notación O Grande >>
+
+### 2.1 O grande constante o O(n) = 1
+
+Ya hemos visto un ejempo en la definición de `Notación O Grande`. Son los Algoritmos que tienen un número constante de tiempos (tomados como número de operaciones a realizar) o espacios (tomados como variables usadas) sin importar el tamaño de los datos con los que trabaja el algoritmo.
+
+## 2.2 O grande lineal o O(n) = n
+
+Son los algoritmos que dependen proporcionalmente del número de datos con los que trabaja el algoritmo.
