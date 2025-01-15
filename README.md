@@ -107,4 +107,4 @@ Ya hemos visto un ejempo en la definición de `Notación O Grande`. Son los Algo
 
 ## 2.2 O grande lineal o O(n) = n
 
-Son los algoritmos que dependen proporcionalmente del número de datos con los que trabaja el algoritmo.
+Son los algoritmos que dependen proporcionalmente del número de datos con los que trabaja el algoritmo. Estos algortimos pueden tener una función tiempo de `f(n) = 2n` o `f(n) = 3n + 2n + 12`, pero su notación de O grande sigue siendo `O(n) = n`.
