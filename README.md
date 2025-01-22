@@ -108,3 +108,40 @@ Ya hemos visto un ejempo en la definición de `Notación O Grande`. Son los Algo
 ## 2.2 O grande lineal o O(n) = n
 
 Son los algoritmos que dependen proporcionalmente del número de datos con los que trabaja el algoritmo. Estos algortimos pueden tener una función tiempo de `f(n) = 2n` o `f(n) = 3n + 2n + 12`, pero su notación de O grande sigue siendo `O(n) = n`.
+
+## 2 Notación O grande de estructuras de datos de Javascript
+
+### 2.1 Estructuras de datos de Javascript
+
+Javascript viene con una serie de estructuras de datos ya definidas en el lenguaje. Principalmente tenemos las estructuras primitivas: `string` o cadena de texto, `number`, `NaN`, `null`, `undefined` y los booleanos `true` y `false` y luego tenemos los `arrays` y los `objetos`. Además de estos hay otras estructuras derivadas de las anteriores tales como `Sets` y `Symbols`, pero en esencia las estructuras con las que vamos a tener que trabajar y aplicar métodos y algoritmos son los `arrays` y los `objetos`. Por ello nos vamos a parar en detalle a ver las Notaciones O grande de los principales métodos de estas estructuras.
+
+### 2.2 Notación O grande de los Arrays
+
+Los arrays son secuencias de datos ordenados. Esta estructura tiene una longitud definida, y aunque se puedan usar métodos para agregar elementos delante, detrás o incluso en partes interiores, en realidad lo que hacemos es crear nuevos arrays a partir del array modificado.
+
+Los principales métodos de un array son:
+
+- push y pop para agregar y quitar elementos en la última posición del array
+- shift y unshift para quitar y agregar elementos al principio del array. Es una operación costosa ya que hay que reescribir los índices de todo el array.
+- map, foreach, filter, find, some... son métodos que recorren el array, a veces totalmente a veces hasta una determinada condición pero que en el peor caso han de recorrer el array entero.
+- ordenación. Especialmente costosa, ya que hay que comparar los elementos, modificar su orden y volver a comparar.
+
+Las Notaciones o Grande de cada operación quedarían así:
+| Operación | Notación O grande |
+|:-----|:-----|
+| Acceder a un dato: Array[indice] | O(1) |
+| Añadir o quitar elementos al final| O(1) |
+| Añadir o quitar elementos del principio | O(n)|
+| Métodos que recorren el array | O(n) |
+| Ordenar elementos en el array | O(log-n \* n) |
+
+### 2.3 Notación O grande de los objetos
+
+Los objetos en javascript nos permiten tener una estructura de pares clave valor sin orden específico, lo que la hace una estructura muy versátil y eficiente a la hora de acceder a los datos y modificarlos. Cada conjunto clave-valor de denomina una `propiedad`del objeto. El acceso a los datos mediante la clave de la propiedad es inmediato, así como su modificación. Los métodos que recorren cada propiedad del objeto.
+
+Las Notaciones o Grande de cada operación quedarían así:
+| Operación | Notación O grande |
+|:-----|:-----|
+| Acceder a un dato: Objeto{clave] u Objeto.clave | O(1) |
+| Añadir o quitar propiedades | O(1) |
+| Métodos que recorren las propiedades del objeto | O(n) |
