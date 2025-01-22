@@ -1,15 +1,33 @@
 ```javascript
-// Create a function that given two arrays of digit elements compares if both have the same numbers
+// Create a function that given two strings compares if both are valid anagrams
 
-const compareArraysOfDigits = function (arr1, arr2) {
-  // If both dont have the same length we can return false
-  if (arr1.length !== arr2.length) return false;
+function validAnagram(string1, string2) {
+  if (string1.length !== string2.length) return false;
 
-  const frequencyCounter1 = {};
-  const frequencyCounter2 = {};
+  let counter1 = {};
+  let counter2 = {};
 
-  for (let i = 0; i < arr1.length; i++) {
-    // TODO: Terminar el ejercício
+  for (let i = 0; i < string1.length; i++) {
+    let char1 = string1[i];
+    let char2 = string2[i];
+
+    if (!counter1[char1]) {
+      counter1[char1] = 1;
+    } else {
+      counter1[char1]++;
+    }
+
+    if (!counter2[char2]) {
+      counter2[char2] = 1;
+    } else {
+      counter2[char2]++;
+    }
   }
-};
+
+  for (let prop in counter1) {
+    if (counter1[prop] !== counter2[prop]) return false;
+  }
+
+  return true;
+}
 ```
