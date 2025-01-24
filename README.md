@@ -145,3 +145,31 @@ Las Notaciones o Grande de cada operación quedarían así:
 | Acceder a un dato: Objeto{clave] u Objeto.clave | O(1) |
 | Añadir o quitar propiedades | O(1) |
 | Métodos que recorren las propiedades del objeto | O(n) |
+
+## 3 Patrones de resolución
+
+Vamos a comentar algunos de los métodos de resolución de problemas o algoritmos que se pueden aplicar directamente a arrays y objetos
+
+### 3.1 Contadores de frecuencia.
+
+Los contadores de frecuencia son una gran solución a problemas en los que hay que por ejemplo evaluar si tenemos el mismo número de caracteres de un `string`, si otro `string` tiene todas las vocales al menos una vez o si un `string` es un anagrama de otro.
+
+Básicamente, en vez de usar métodos más complejos en el caso de anagramas vamos a guardar en un objeto cada uno de los elementos únicos de un array según lo recorremos como propiedad de ese objeto (nuestro contador de frecuencia) y como valor vamos a incluir 1 la primera vez, y cuando lleguemos a un elemento del que ya contemos con propiedad en nuestro contador de frecuencia lo que hacemos es añadir 1 a dicho valor de la frecuencia.
+
+Si usamos un contador para cada array que tengamos que comparar y luego comparamos las frecuencias podremos ver de forma sencilla si ambos strings son anagramas.
+
+podemos ver un ejemplo aplicado [aquí](frecuency-counter1.md)
+
+### 3.2 Punteros movibles
+
+La técnica de los punteros movibles está indicada para evitar realizar un bucle anidado para ver por ejemplo cuantos valores numéricos únicos tenemos dentro de un array ordenado.
+
+Consiste en estableces dos valores que contengan dos posiciones del array, de inicio por ejemplo 0 y 1 como el valor de los índices y vamos desplazando ambos punteros para ir haciendo comprobaciones entre los dos valores situados en las posiciones de dichos punteros.
+
+Podemos ver un ejemplo aplicado [aquí](moving-pointers1.md)
+
+### 3.3. Ventana dezlizante
+
+Es una técnica destinada a resolver problemas de comparación de subarrays dentro de un array. Si por ejemplo queremos encontrar el valo de la mayor suma de 3 elementos consecutivos de un array lo que hacemos es calcular la suma de los 3 primeros elementos, y, posteriormente dezplazamos el subarray una posición a la derecha y en vez de volver a sumar todo el subarray simplemente al valor de la suma anterior le sumamos el elemento de la derecha y le restamos el de la izquierda... y así hasta alcanzar la última posición.
+
+Cuando los arrays son grandes y los subarrays tienen muchos elementos también tiene una gran ganancia de eficiencia, pasando de una complejidad tiempo de O(n^2) a O(n).
