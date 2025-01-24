@@ -173,3 +173,7 @@ Podemos ver un ejemplo aplicado [aquí](moving-pointers1.md)
 Es una técnica destinada a resolver problemas de comparación de subarrays dentro de un array. Si por ejemplo queremos encontrar el valo de la mayor suma de 3 elementos consecutivos de un array lo que hacemos es calcular la suma de los 3 primeros elementos, y, posteriormente dezplazamos el subarray una posición a la derecha y en vez de volver a sumar todo el subarray simplemente al valor de la suma anterior le sumamos el elemento de la derecha y le restamos el de la izquierda... y así hasta alcanzar la última posición.
 
 Cuando los arrays son grandes y los subarrays tienen muchos elementos también tiene una gran ganancia de eficiencia, pasando de una complejidad tiempo de O(n^2) a O(n).
+
+### 3.4 Divide y vencerás
+
+La técnica consiste en ir dividiendo nuestro conjunto de datos en subconjuntos de forma subsecuente. Este es por ejemplo el método detrás de la búsqueda binaria (si contamos con un array ordenado)
