@@ -158,7 +158,7 @@ Básicamente, en vez de usar métodos más complejos en el caso de anagramas vam
 
 Si usamos un contador para cada array que tengamos que comparar y luego comparamos las frecuencias podremos ver de forma sencilla si ambos strings son anagramas.
 
-podemos ver un ejemplo aplicado [aquí](frecuency-counter1.md)
+podemos ver un ejemplo aplicado [aquí](frecuency-counter1.md), [aquí](frecuency-counter2.js) y [aquí](frecuency-counter3.js)
 
 ### 3.2 Punteros movibles
 
