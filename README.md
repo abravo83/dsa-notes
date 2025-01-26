@@ -166,7 +166,7 @@ La técnica de los punteros movibles está indicada para evitar realizar un bucl
 
 Consiste en estableces dos valores que contengan dos posiciones del array, de inicio por ejemplo 0 y 1 como el valor de los índices y vamos desplazando ambos punteros para ir haciendo comprobaciones entre los dos valores situados en las posiciones de dichos punteros.
 
-Podemos ver un ejemplo aplicado [aquí](moving-pointers1.md)
+Podemos ver un ejemplo aplicado [aquí](moving-pointers1.md), [aquí](multiple-pointers1.js)
 
 ### 3.3. Ventana dezlizante
 
