@@ -1,4 +1,4 @@
-/*
+/* EXERCISE DESCRIPTION
 Frequency Counter - sameFrequency
 Write a function called sameFrequency. Given two positive integers, find out if the two numbers have the same frequency of digits.
 
@@ -51,4 +51,21 @@ function sameFrequency(num1, num2) {
   return true;
 }
 
-console.log(sameFrequency(182, 281));
+// Different solution using one frequency counter:
+// function sameFrequency(num1, num2) {
+//     const string1 = num1.toString();
+//     const string2 = num2.toString();
+
+//     if (string1.length !== string2.length) return false;
+
+//     const freqCounter = {};
+
+//     // Incrementa el contador para string1 y decrementa para string2
+//     for (let i = 0; i < string1.length; i++) {
+//         freqCounter[string1[i]] = (freqCounter[string1[i]] || 0) + 1;
+//         freqCounter[string2[i]] = (freqCounter[string2[i]] || 0) - 1;
+//     }
+
+//     // Si todos los valores son 0, los números tienen la misma frecuencia
+//     return Object.values(freqCounter).every(count => count === 0);
+// }
