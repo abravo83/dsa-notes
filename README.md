@@ -174,7 +174,7 @@ Es una técnica destinada a resolver problemas de comparación de subarrays dent
 
 Cuando los arrays son grandes y los subarrays tienen muchos elementos también tiene una gran ganancia de eficiencia, pasando de una complejidad tiempo de O(n^2) a O(n).
 
-Puedes ver un ejemplo [aquí](./sliding-window/sliding-window1.js)
+Puedes ver un ejemplo [aquí](./sliding-window/sliding-window1.js) o [aquí](./sliding-window/sliding-window2.js)
 
 ### 3.4 Divide y vencerás
 
