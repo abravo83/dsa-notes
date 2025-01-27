@@ -174,6 +174,8 @@ Es una técnica destinada a resolver problemas de comparación de subarrays dent
 
 Cuando los arrays son grandes y los subarrays tienen muchos elementos también tiene una gran ganancia de eficiencia, pasando de una complejidad tiempo de O(n^2) a O(n).
 
+Puedes ver un ejemplo [aquí](./sliding-window/sliding-window1.js)
+
 ### 3.4 Divide y vencerás
 
 La técnica consiste en ir dividiendo nuestro conjunto de datos en subconjuntos de forma subsecuente. Este es por ejemplo el método detrás de la búsqueda binaria (si contamos con un array ordenado)
