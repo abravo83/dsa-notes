@@ -158,7 +158,7 @@ Básicamente, en vez de usar métodos más complejos en el caso de anagramas vam
 
 Si usamos un contador para cada array que tengamos que comparar y luego comparamos las frecuencias podremos ver de forma sencilla si ambos strings son anagramas.
 
-podemos ver un ejemplo aplicado [aquí](frecuency-counter1.md), [aquí](frecuency-counter2.js) y [aquí](frecuency-counter3.js)
+podemos ver un ejemplo aplicado [aquí](./frecuency-counters/frecuency-counter1.md), [aquí](./frecuency-counters/frecuency-counter2.js) y [aquí](./frecuency-counters/frecuency-counter3.js)
 
 ### 3.2 Punteros movibles
 
@@ -166,7 +166,7 @@ La técnica de los punteros movibles está indicada para evitar realizar un bucl
 
 Consiste en estableces dos valores que contengan dos posiciones del array, de inicio por ejemplo 0 y 1 como el valor de los índices y vamos desplazando ambos punteros para ir haciendo comprobaciones entre los dos valores situados en las posiciones de dichos punteros.
 
-Podemos ver un ejemplo aplicado [aquí](moving-pointers1.md), [aquí](multiple-pointers1.js)
+Podemos ver un ejemplo aplicado [aquí](./multiple-pointers/moving-pointers1.md), [aquí](./multiple-pointers/multiple-pointers1.js) y [aquí](./multiple-pointers/multiple-pointers2.js)
 
 ### 3.3. Ventana dezlizante
 
