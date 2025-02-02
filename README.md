@@ -99,7 +99,7 @@ Decimos que la **complejidad tiempo O(n) es constante** y esto se expresa como `
 
 Las funciones tiempo o espacio independientes del tamaño de los datos son pocas. La mayor parte de los algoritmos comunes para resolver problemas lo hacen en función de `n`.
 
-## 2 Vista general de los diferentes grupos de algoritmos basándonos en << Notación O Grande >>
+## 2 Vista general de los diferentes grupos de algoritmos basándonos en <<blockquote Notación O Grande >>
 
 ### 2.1 O grande constante o O(n) = 1
 
@@ -179,3 +179,105 @@ Puedes ver un ejemplo [aquí](./sliding-window/sliding-window1.js) o [aquí](./s
 ### 3.4 Divide y vencerás
 
 La técnica consiste en ir dividiendo nuestro conjunto de datos en subconjuntos de forma subsecuente. Este es por ejemplo el método detrás de la búsqueda binaria (si contamos con un array ordenado)
+
+## 4 Recursividad
+
+La recursividad (o recursión) es una técnica alternativa a las técnicas de iteracción (recorrer bucles) algo diferente que require de su propia sección por la complejidad que puede presentar para aquellos que están comenzando a usarla.
+
+Generalmente podemos encontrar una vía alternativa a la recursión a través de la iteracción y viceversa.
+
+A modo de introducción vamos a ver la siguiente historia
+
+<figure>
+<blockquote>
+<cite>
+Martín y el Dragón
+<br /><br />
+Érase una vez un chico llamado Martín.
+<br /><br />
+Era un tiempo anterior a la existencia de las computadoras. En este tiempo había algunos magos y alquimistas, y el pequeño Martín trabajaba de aprendiz para ellos.
+<br /><br />
+También existía un dragón al que todos llamaban `El dragón`.
+<br /><br />
+Un día Martín recibió una tarea de un mago: Martín debía ir a ver al dragón con una lista de números y debía de saber si alguno de los números en esa lista son impares.
+<br /><br />
+Martín se acercó al dragón y le dijo:
+<br />
+--`Disculpe Sr. Dragón, ¿Es alguno de estos números impar?`
+<br />
+(3142 5798 6550 5914)
+<br /><br />
+El dragón, que no estaba de buen humor porque tenía hambre contestó a Martín:
+<br />
+-- `Lo siento chico, sólo te lo diré si el primero de estos números en la lista es impar.`
+<br /><br />
+Martín estaba algo contrariado. No quería fallar en la taréa que le habían encomendado. Sin pensarlo contestó:
+<br />
+-- `¡PERO YO NECESITO SABE SI CUALQUIERA DE LOS NÚMEROS EN LA LISTA ES IMPAR!`
+<br /><br />
+El dragón, más molesto que Martín, a su vez le contestó:
+<br />
+-- `LO SIENTO CHICO. ¡SÓLO TE DIRÉ SI EL PRIMERO NÚMERO EN LA LISTA EN IMPAR!`
+<br /><br />
+Martín se paró un momento a pensar. `¿Qué puedo hacer?` se dijo. Y derepente a Martín se le ocurrió una buena solución.
+<br /><br />
+Se acercó de nuevo al dragón y le dijo:
+<br />
+-- `Vale, bien. ¿Es el primer número de mi lista impar? (3142 5798 6550 5914)`
+<br /><br />
+El dragón le contesta:
+<br />
+-- `¡NO IMPAR!`
+<br /><br />
+Martín se da la vuelta pero un par se segundos depúes se vuelve y le vuelve a preguntar:
+<br />
+-- `Vale vale, pero... ¿qué me dices de esta otra lista? (5798 6550 5914)`
+<br /><br />
+El dragón le contesta:
+<br />
+-- `¡NO IMPAR!`
+<br /><br />
+Martín vuelve a hacer lo mismo replicando:
+<br />
+-- `Vale vale, pero... ¿qué me dices de esta otra lista? (6550 5914)`
+<br /><br />
+El dragón le contesta, comenzando a aburrirse:
+<br />
+-- `¡NO IMPAR!`
+<br /><br />
+Martín repite una vez más:
+<br />
+-- `Vale vale, pero... ¿qué me dices de este primer número de esta otra lista? (5914)`
+<br /><br />
+El dragón contesta:
+<br />
+-- `¡NO IMPAR!`
+<br /><br />
+Martín todavía vuelve una vez más a preguntar:
+<br />
+-- `¿Y qué me dices de este primer número de esta otra lista? ()`
+<br /><br />
+El dragón le contesta furiso:
+<br />
+-- `¡Es una lista vacía, estúpido! No hay ningún número en ella.`
+<br /><br />
+Martín triunfante le contesta:
+<br />
+-- `¡Ahá!, ¡Así que todos los números de mi lista son pares!`
+<br /><br />
+El dragón le contesta:
+<br />
+-- `¡YO NUNCA HE DICHO ESO! Yo sólo te he dicho si el primer número de tus listas era impar`
+<br /><br />
+-- `Ya pero yo te he preguntado primero por (3142 5798 6550 5914), luego por (5798 6550 5914), luego por (6550 5914), luego por (5914) y finalmente por (). Y como en la penúltima lista no había impares, y en la anterior tampoco ni en la anterior puedo decir que en la primera lista no hay impares.`
+<br /><br />
+El dragón le contestó:
+<br />
+-- `Enhorabuena, has descubierto la recursividad`
+</cite>
+
+</blockquote>
+<figcaption>
+Colt Steel: Algorithims and Data Structure Masterclass - Udemy Course
+</figcaption>
+</figure>
