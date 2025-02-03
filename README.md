@@ -281,3 +281,12 @@ El dragón le contestó:
 Colt Steel: Algorithims and Data Structure Masterclass - Udemy Course
 </figcaption>
 </figure>
+
+### 4.1 ¿Qué es recursividad?
+
+Es un proceso (una función) que se llama a sí misma.
+
+### 4.2 ¿Por qué usarlo?
+
+- Está en todas partes (p. e. JSON.Parse, document.getElementById...)
+- Es a veces una alternativa más clara a una iteracción.
