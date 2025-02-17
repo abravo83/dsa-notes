@@ -22,3 +22,11 @@ function reverse(str) {
 
 console.log(reverse("awesome"));
 console.log(reverse("rithmschool"));
+
+/*
+A different solution:
+function reverse(str){
+	if(str.length <= 1) return str;
+	return reverse(str.slice(1)) + str[0];
+}
+*/
